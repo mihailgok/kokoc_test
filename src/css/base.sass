@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap')
+
+body
+   font-family: 'Roboto', sans-serif
+   // -webkit-font-smoothing: antialiased
+   font-size: 18px
+
+.container
+   max-width: 100%
+   width: 1400px
+   margin: 0 auto
+   padding: 0 25px
+
+// .swiper-horizontal
+//    touch-action: pan-y
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar
+   height: 8px
+   width: 8px
+
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb
+   background-color: $green
+   border-radius: 15px
+
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track
+   background: transparent
+
+@media (max-width: 650px)
+   *::-webkit-scrollbar, html *::-webkit-scrollbar
+      height: auto
+      width: 4px
+
+   // .container
+   //    max-width: 100% !important
+   //    width: 100% !important
+   //    padding: 0 15rem

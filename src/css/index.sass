@@ -1,0 +1,103 @@
+.main 
+   padding: 44px 0 77px 0
+
+.section
+   &__header
+      font-size: 48px
+      font-weight: 400
+      line-height: 28px
+      margin-bottom: 68px
+
+.blog 
+   &__cards
+      &__grid 
+         display: grid 
+         grid-template-columns: 1fr 1fr 1fr
+         gap: 37px 40px
+   &__card 
+      border-radius: 20px
+      background: #FFF
+      box-shadow: 0px 4px 15px 0px rgba(0, 161, 92, 0.15)
+      overflow: hidden
+      display: flex
+      flex-direction: column
+      &__img 
+         width: 100%
+         height: 269px
+         object-fit: cover
+         flex-shrink: 0
+      &__text 
+         padding: 24px 35px 36px 35px
+         height: 100%
+         display: flex
+         flex-direction: column
+         &__bottom
+            display: flex
+            align-items: flex-end
+            justify-content: space-between
+            margin-top: auto
+      &__header 
+         font-size: 24px
+         font-style: normal
+         font-weight: 500
+         margin-bottom: 2px
+         line-height: normal
+         transform: translateX(1px)
+      &__date
+         color: #C4C4C4
+         font-size: 20px
+         font-style: normal
+         line-height: 28px
+         margin-bottom: 25px
+         display: inline-block
+         transform: translateX(1px)
+      &__desc
+         line-height: 23px
+         margin-bottom: 33px
+      &__author 
+         color: #C4C4C4
+         font-size: 16px
+         font-weight: 400
+         line-height: 28px
+         transform: translateX(1px)
+      &__like
+         width: 30px
+         height: 30px
+         position: relative
+         transform: translateY(-10px)
+         // margin-bottom: 10px
+         &__svg 
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            position: absolute
+            margin: auto
+            opacity: 0
+            transition: opacity 0.3s
+            pointer-events: none
+            &:first-child
+               opacity: 1
+         &.active 
+            .blog__card__like__svg:last-child
+               opacity: 1
+
+
+
+@media (max-width: 1024px)
+   .blog 
+      &__cards
+         &__grid
+            grid-template-columns: 1fr 1fr
+            gap: 25px 30px
+
+
+
+
+@media (max-width: 650px)
+   .blog 
+      &__cards
+         &__grid
+            grid-template-columns: 1fr

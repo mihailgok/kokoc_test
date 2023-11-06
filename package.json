@@ -1,0 +1,29 @@
+{
+   "name": "kokoc",
+   "version": "1.0.0",
+   "description": "",
+   "parcel-namer-custom": {
+      ".sass$": "css/[name].[type]",
+      ".css$": "css/[name].[type]",
+      ".jpg$": "image/[name].[type]",
+      ".jpeg$": "image/[name].[type]",
+      ".png$": "image/[name].[type]",
+      ".webp$": "image/[name].[type]",
+      ".svg$": "image/[name].[type]",
+      ".js$": "js/[name].[type]"
+   },
+   "scripts": {
+      "dev": "parcel src/*.html",
+      "build": "parcel build src/*.html --no-content-hash --no-cache --no-source-maps --no-optimize --no-scope-hoist --dist-dir build --public-url ."
+   },
+   "author": "mihailgok",
+   "license": "ISC",
+   "dependencies": {
+      "parcel": "^2.9.3",
+      "parcel-namer-custom": "^0.2.0"
+   },
+   "devDependencies": {
+      "@parcel/transformer-sass": "^2.9.3",
+      "posthtml-include": "^1.7.4"
+   }
+}
